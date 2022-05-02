@@ -1,0 +1,11 @@
+
+  
+{% extends 'base.html' %}
+{% import 'macros.html' as macro %}
+
+{% block content %}
+<h3>News Sources</h3>
+
+ {{ macro.displayNewsSources(sources) }}
+
+{% endblock %}
