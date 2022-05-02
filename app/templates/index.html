@@ -7,9 +7,15 @@
         {% else %}
         <title> News app</title>
         {% endif %}
+        {% import 'macros.html' as macro%}
     </head>
     <body>
-<h6>goy</h6>
+      
+
+        {% block content %}
+        <h4><bold>Top Headlines</bold></h4>
+               {{ macro.displayNewsHeadlines(headlines) }}
+        {% endblock %}
 
     </body>
 </html> 
