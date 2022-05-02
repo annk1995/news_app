@@ -24,3 +24,23 @@
 
 {% endmacro %}
 
+{% macro displayNewsSources(sources) %}
+
+<div class="container">
+    <div class="row">
+        {% for source in sources %}
+        <div class="col-md-4 " style="display: flex">
+          <div class="card mb-4" style="width: 30rem;">
+            <div class="card-body">
+               <a href="{{ source.url }}" target="_blank" class="btn btn-primary">
+                  <h5 class="card-title">{{ source.name }}</h5>
+                  <p>{{ source.description }}</p>
+               </a>
+            </div>
+          </div>
+        </div>
+         {% endfor %}
+    </div>
+</div>
+
+{% endmacro %}
