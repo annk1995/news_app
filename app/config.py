@@ -4,7 +4,7 @@ from instance.config import NEWS_API_KEY
 class Config:
   NEWS_API_KEY="7e46dfc39abd4a32a42ce973de9159e0"
   NEWS_API_BASE_URL ='https://newsapi.org/v2/everything?q=Apple&from=2022-05-02&sortBy=popularity&apiKey='+NEWS_API_KEY
- 
+  SOURCES_API_BASE_URL = 'https://newsapi.org/v2/top-headlines/sources?apiKey={}'
 class ProdConfig(Config):
     '''
     Production  configuration child class

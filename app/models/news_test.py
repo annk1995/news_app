@@ -1,6 +1,7 @@
 import unittest
 from app.models import headlines
 Headlines=headlines.Headlines
+Sources =headlines.Sources
 
 class newsTest(unittest.TestCase):
     def setUp(self):
@@ -10,6 +11,28 @@ class newsTest(unittest.TestCase):
 
     def test_instance(self):
       self.assertTrue(isinstance(self.new_headlines,Headlines))
+
+
+if __name__ == '__main__':
+    unittest.main()
+
+# test for the sources class
+class SourcesTest(unittest.TestCase):
+    """
+    Test case to test the behaviour of the Sorces class
+    """
+
+    def setUp(self):
+        """
+        This method runs before every case
+        """
+
+        self.new_sources = Sources("ABC News",
+                                   "Norges ledende nettavis med alltid oppdaterte nyheter innenfor innenriks, utenriks, sport og kultur.",
+                                   "https://www.aftenposten.no")
+
+    def test_instance(self):
+        self.assertTrue(isinstance(self.new_sources, Sources))
 
 
 if __name__ == '__main__':
