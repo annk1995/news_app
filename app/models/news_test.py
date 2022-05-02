@@ -1,12 +1,15 @@
 import unittest
 from models import news
-News=news.news
+News=news.News
 
 class newsTest(unittest.TestCase):
     def setUp(self):
-        self.new_news=News(1234,'headlines','https://newsapi.org/v2/top-headlines?country=de&category=business&apiKey=7e46dfc39abd4a32a42ce973de9159e0') 
-        def test_instance(self):
-         self.assertTrue(isinstance(self.new_news,News))
+        self.new_news=News('bbc-news', 'John', 'War in Ukraine', 'The war that Putin is not ready to lose',
+                                       'https://www.washingtonpost.com/politics/2022/05/02/biden-javelins-first-lady-refugees/',
+                                       '"https://images.wsj.net/im-535503/social', '2022-05-02T13:16:00Z')
+
+    def test_instance(self):
+      self.assertTrue(isinstance(self.new_news,News))
 
 
 if __name__ == '__main__':
