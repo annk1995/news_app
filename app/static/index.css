@@ -1,0 +1,18 @@
+
+.headline {
+    margin-bottom: 4em;
+}
+
+.card {
+    border: 1px solid #fff;
+}
+
+.card-body {
+    padding: 3rem;
+    background-color: rgb(243, 239, 239);
+    
+}
+
+.card-text{
+    color: #000;
+}
