@@ -11,12 +11,18 @@ a user should visit the page and enjoy the latest news the open on the full stor
 
 # installation
 
-One can clone the repository to have it in their local storage. git clone 
+Clone this repository to a location in your file system. git clone 
 
-Or fork this repo and download the resulting zip file
+Open terminal command line then navigate to the root folder of the application. cd Watchlist
 
-Extract zip to our working directory and open using favorite text editor
+Run pip -m venv virtual
 
-Make sure you have access to all the linked cdns and fonts
+Activate Virtual source virtual/bin/activate
 
-Launch the website using a local live server to view on the we
+Ensure Flask-Bootstrap & Flask-Forms are installed by typing pip freeze on the terminal to install packages dependencies from requirement.txt file. If not 
+
+run the necessary commands to install them.
+
+Run python3 run.py command. Note this will work if you've properly configured your app with the required dependencies
+
+Navigate to http://localhost:5000/ in your browser.
