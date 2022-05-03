@@ -7,13 +7,19 @@
         {% else %}
         <title> News app</title>
         {% endif %}
+        {% extends  'base.html'%}
         {% import 'macros.html' as macro%}
+        
     </head>
     <body>
-      
+        {% block styles%}
+        {{ super() }}
+        <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+    {% endblock %}
 
         {% block content %}
         <h4><bold>Top news</bold></h4>
+        
                {{ macro.displayNewsHeadlines(headlines) }}
         {% endblock %}
 
