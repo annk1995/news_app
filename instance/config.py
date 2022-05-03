@@ -1,1 +1,1 @@
-NEWS_API_KEY="your secret"
+NEWS_API_KEY="yoursecret"
