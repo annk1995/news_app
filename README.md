@@ -13,7 +13,7 @@ a user should visit the page and enjoy the latest news the open on the full stor
 
 Clone this repository to a location in your file system. git clone https://github.com/annk1995/news_app.git
 
-Open terminal command line then navigate to the root folder of the application. cd Watchlist
+Open terminal command line then navigate to the root folder of the application. cd news_app
 
 Run pip -m venv virtual
 
